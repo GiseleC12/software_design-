@@ -1,0 +1,53 @@
+What do we mean by coupling and cohesion when discussing structured design?
+
+In software engineering, coupling is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are; the strength of the relationships between modules.
+
+Cohesion is a measure of the degree to which the elements of the module are functionally related. It is the degree to which all elements directed towards performing a single task are contained in the component.
+
+What is the difference between top-down and bottom-up desing? Which best describes a function oriented design? 
+
+The main difference between the top-down and bottom-up approaches is the process's starting point and focus. The top-down approach prioritizes high-level planning and decision-making, while the bottom-up approach prioritizes the execution of individual tasks and the development of detailed knowledge. 
+
+Function Oriented Design is an approach to software design where the design is decomposed into a set of interacting units where each unit has a clearly defined function
+
+In which desing methodology would a class diagramm be most useful? 
+
+The UML Class Diagram is a standard for object modeling in software design and has now become a new approach used for object-oriented databases and object-relational database modeling.
+
+What are the four pillars of object oriented programming? Give a single-sentence descprition of each. 
+
+The Four pillars of OOPs are abstraction, encapsulation, inheritance, and polymorphism. 
+Abstraction is the process of hiding the internal details of an application from the outer world.
+Encapsulation refers to the bunding of data with the mechanisms or methods that operate on the data. 
+Inheritance is the mechanism of basing an object or class upon another object or class, retaining similar implementation. 
+Polymorphism is the provision of a single interface to entities of different types or the use of a single symbol to represent multiple different types. 
+
+What is the strategy pattern? How would its implementation differ between a functional and object oriented system?
+
+The Strategy Pattern is a design pattern used in both functional and object-oriented programming to define a family of algorithms, encapsulate each one of them, and make them interchangeable. However, the implementation of the Strategy Pattern can differ between these two programming paradigms due to the inherent differences in their approaches. In an object-oriented system, the Strategy Pattern is typically implemented using classes and interfaces. In a functional system, the Strategy Pattern can be implemented without classes and interfaces, using higher-order functions and data structures.
+
+Imagine you creating a new online payment system. In order t gain maximum market share it can't be tied to a particular sector- it needs to work just as well when ordering a takeaway as when buying a new coat. Which design methodology would you suggest following? Give some justification for your decision. 
+
+To create an online payment system that is not tied to a particular sector and can be used for a wide range of transactions, a good approach is to follow a modular and flexible design methodology. This approach allows the system to adapt to various business domains and requirements, ensuring it can work seamlessly for ordering takeaways or buying a new coat. Here's a justification for this choice:
+
+1. Modular Design: A modular design methodology involves breaking down the system into smaller, independent modules or components. Each module handles a specific aspect of the system's functionality. In the context of an online payment system, you can have modules for payment processing, user authentication, transaction history, and more. This modular approach promotes reusability and maintainability.
+
+2. Component Reusability: By designing the system with a focus on modularity, you can easily reuse and reconfigure components to adapt to different use cases. For example, you can use the same payment processing module for ordering food and buying clothing, reducing development effort and ensuring consistent performance.
+
+3. Dependency Injection: Employing dependency injection, where components receive their dependencies rather than creating them, allows for easy substitution of components or strategies. This makes it possible to use different payment gateways or methods for different sectors without rewriting large portions of the code.
+
+4. Configuration-Driven: Create a configuration-driven system where the behavior of the online payment system can be configured based on the specific needs of different sectors. You can have configuration profiles for different industries (e.g., food delivery, e-commerce, travel) that dictate how payments are processed and what additional features are available.
+
+5. Plugin System: Implement a plugin or extension system that allows for the addition of custom functionality or integrations for specific sectors. This way, businesses in various sectors can extend the core payment system to meet their unique requirements without modifying the core codebase.
+
+6. API-Centric: Design the system with a robust API that allows other systems and businesses to integrate easily. This approach promotes interoperability and allows third-party developers to build on top of your payment system for specialized use cases.
+
+7. Testing and Validation: Develop a comprehensive testing strategy to ensure that the payment system can handle a variety of transaction scenarios. Implement validation mechanisms to prevent misuse and fraud in any sector.
+
+8. Scalability: Ensure that the system can scale horizontally to handle varying transaction volumes, which is crucial when catering to multiple sectors with different demands.
+
+9. Security: Prioritize security throughout the design and development process to protect sensitive user data and financial transactions. Ensure compliance with industry standards and regulations.
+
+10. User Experience: Keep the user experience in mind, making it intuitive and consistent across different sectors. A well-designed user interface and user experience can significantly contribute to the system's success.
+
+By following a modular and flexible design methodology, your online payment system can adapt to different sectors' requirements and gain maximum market share by offering a versatile and customizable solution that appeals to a wide range of businesses and industries. This flexibility will enable you to stay competitive and meet the evolving needs of your customers.
